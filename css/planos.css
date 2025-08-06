@@ -1,0 +1,180 @@
+    /* responsividade da navbar */
+  @media (max-width: 991px) {
+    .dropdown-menu.force-left {
+      left: auto !important;
+      right: 0 !important;
+    }
+  }
+
+  .offcanvas,
+  .offcanvas-body {
+      overflow: visible !important;
+  }
+
+  .btn-group {
+      position: relative;
+  }
+
+  .btn-group .dropdown-menu {
+      position: absolute;
+      z-index: 1060;
+  }
+/* responsividade do carrosel */
+.carousel-item {
+    height: 75vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #a57c00;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  }
+
+  .carousel-caption {
+    background-color: transparent;
+    padding: 15px;
+    border-radius: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+    text-align: right !important; 
+    max-width: 70%;
+    right: 0;
+    color: #a57c00 !important;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: invert(69%) sepia(79%) saturate(327%) hue-rotate(359deg) brightness(93%) contrast(90%);
+  }
+
+  .carousel-indicators button {
+    background-color: #D4AF37 !important;
+  }
+
+  @media (max-width: 992px) {
+    .carousel-item {
+      height: 60vh;
+    }
+    .carousel-caption h1 {
+      font-size: 1.6rem;
+    }
+    .carousel-caption h3 {
+      font-size: 1.2rem;
+    }
+    .carousel-caption p {
+      font-size: 1rem;
+    }
+
+    .carousel-item.fundo1 {
+      background-image: url('imagens/fundo1-m.png') !important;
+    }
+
+    .carousel-item.fundo2 {
+      background-image: url('imagens/fundo2-m.png') !important;
+    }
+
+    .carousel-item.fundo3 {
+      background-image: url('imagens/fundo3-m.png') !important;
+    }
+  }
+    /* responsividade para celular carousel */
+    @media (max-width: 400px) {
+    .carousel-item {
+      height: 60vh;
+    }
+    .carousel-caption h1 {
+      font-size: 1.6rem;
+    }
+    .carousel-caption h3 {
+      font-size: 1.2rem;
+    }
+    .carousel-caption p {
+      font-size: 1rem;
+    }
+
+    .carousel-item.fundo1 {
+      background-image: url('imagens/fundo1-m400.png') !important;
+    }
+
+    .carousel-item.fundo2 {
+      background-image: url('imagens/fundo2-m400.png') !important;
+    }
+
+    .carousel-item.fundo3 {
+      background-image: url('imagens/fundo3-m400.png') !important;
+    }
+  }    
+
+  @media (max-width: 768px) {
+    .carousel-item {
+      height: 50vh;
+    }
+    .carousel-caption h1 {
+      font-size: 1.4rem;
+    }
+    .carousel-caption h3 {
+      font-size: 1rem;
+    }
+    .carousel-caption p {
+      font-size: 0.9rem;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .carousel-caption {
+      max-width: 90%;
+    }
+    .carousel-caption h1 {
+      font-size: 1.2rem;
+    }
+    .carousel-caption h3 {
+      font-size: 1rem;
+    }
+    .carousel-caption p {
+      font-size: 0.8rem;
+    }
+  }  
+  /* responsividade do corpo */
+  .text-justificado {
+      text-align: justify;
+    }
+
+    @media (max-width: 992px) {
+      .img-responsive-hidden {
+        display: none !important;
+      }
+    }
+    /* responsividade para o dropdown-menu login */
+    @media (max-width: 400px) {
+    .btn-group .dropdown-menu {
+      position: fixed !important;
+      top: 50% !important;
+      left: 50% !important;
+      transform: translate(-50%, -50%) !important;
+      width: 90vw !important;
+      max-width: 320px;
+      z-index: 1050; /* acima de tudo */
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+  .btn-group .dropdown-menu form {
+    width: 100%;
+  }
+
+  .btn-group .dropdown-menu input,
+  .btn-group .dropdown-menu button,
+  .btn-group .dropdown-menu label {
+    font-size: 0.9rem;
+  }
+
+  .btn-group .dropdown-menu .dropdown-divider,
+  .btn-group .dropdown-menu a.dropdown-item {
+    font-size: 0.85rem;
+    text-align: center;
+  }
+}

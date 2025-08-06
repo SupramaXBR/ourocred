@@ -1,0 +1,57 @@
+.custom-container {
+    max-width: 500px; /* Define um limite máximo */
+    width: 100%;
+}
+/* css da navbar */
+@media (max-width: 1030px) {
+    .nav .btn {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.5rem;
+    }
+    .nav .btn i {
+    font-size: 0.9rem;
+    }
+}
+    /* css da responsividade do footer */
+    .footer-custom {
+        background-color: #3271a5;
+        color: white;
+        padding: 2rem 0;
+    }
+        .link-branco {
+        color: white;
+        text-decoration: none;
+        margin-left: 10px;
+        font-size: 1.5rem;
+    }
+    .texto-grande {
+        font-size: 1.25rem;
+    }
+
+    @media (max-width: 992px) {
+        .texto-grande {
+            font-size: 1rem;
+        }
+        .link-branco {
+        font-size: 1.25rem;
+        margin-left: 5px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .texto-grande {
+            font-size: 0.875rem;
+        }
+        .link-branco {
+            font-size: 1rem;
+            margin-left: 3px;
+        }
+    }            
+    @media (max-width: 400px) {
+        h4.text-center.fw-bold {
+            font-size: 1.2rem !important; /* ou ajuste conforme o que considerar ideal */
+            line-height: 1.2;
+        }
+    }      
+
+    

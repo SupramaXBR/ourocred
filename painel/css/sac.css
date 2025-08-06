@@ -1,0 +1,213 @@
+/* === Estilos Gerais === */
+.custom-container {
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Input Readonly visual (cinza padrão Bootstrap) */
+input[readonly] {
+    background-color: #f8f9fa !important;
+    color: #6c757d;
+}
+
+/* === NAVBAR e SIDEBAR (Responsividade e Controle de Visibilidade) === */
+@media (min-width: 1200px) {
+    .navbar-offcanvas-custom {
+        display: none !important; /* Oculta navbar offcanvas em telas grandes */
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .sidebar-xl {
+        display: none !important; /* Oculta sidebar tradicional em telas pequenas */
+}
+
+    .navbar-offcanvas-custom.auto-hide-on-overlap {
+        position: sticky;
+        top: 0;
+        z-index: 1030;
+        transition: opacity 0.3s ease;
+    }
+
+    .navbar-offcanvas-custom.auto-hide-on-overlap.hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    /* Prevenção de sobreposição da wizard-card */
+    main:has(.wizard-card) {
+        margin-top: 80px;
+    }
+}
+
+/* === Navbar Responsiva (botões menores em telas médias) === */
+@media (max-width: 1030px) {
+    .nav .btn {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.5rem;
+    }
+
+    .nav .btn i {
+        font-size: 0.9rem;
+    }
+}
+
+/* === Footer === */
+.footer-custom {
+    background-color: #3271a5;
+    color: white;
+    padding: 2rem 0;
+}
+
+.link-branco {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 1.5rem;
+}
+
+.texto-grande {
+    font-size: 1.25rem;
+}
+
+@media (max-width: 992px) {
+    .texto-grande {
+        font-size: 1rem;
+    }
+
+    .link-branco {
+        font-size: 1.25rem;
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .texto-grande {
+        font-size: 0.875rem;
+    }
+
+    .link-branco {
+        font-size: 1rem;
+        margin-left: 3px;
+    }
+}
+
+@media (max-width: 400px) {
+    h4.text-center.fw-bold {
+        font-size: 1.2rem !important;
+        line-height: 1.2;
+    }
+}
+
+/* === Wizard Card === */
+.wizard-card {
+    border: 1px solid #ced4da; /* Borda cinza clara (Bootstrap padrão) */
+    border-radius: 1rem;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+/* Título do Wizard */
+.titulo-card {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Subtítulo */
+.subtitulo-card {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #f1f1f1;
+    text-align: center;
+}
+
+/* Tabs */
+.nav-tabs-wizard .nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding: 12px 20px;
+    color: #555;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+    margin-right: 2px;
+}
+
+.nav-tabs-wizard .nav-link:hover {
+    background-color: #e9ecef;
+    color: #000;
+}
+
+.nav-tabs-wizard .nav-link.active {
+    background-color: #ffffff;
+    border-bottom: 3px solid #0d6efd;
+    color: #0d6efd;
+    font-weight: bold;
+}
+
+.tab-content {
+    border-top: 1px solid #dee2e6;
+    padding-top: 20px;
+}
+
+/* Responsividade Wizard */
+@media (max-width: 760px) {
+    .titulo-card {
+        font-size: 1.6rem;
+    }
+
+    .subtitulo-card {
+        font-size: 0.95rem;
+    }
+
+    .nav-tabs-wizard .nav-link {
+        font-size: 0.95rem;
+        padding: 10px 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .titulo-card {
+        font-size: 1.4rem;
+    }
+
+    .subtitulo-card {
+        font-size: 0.9rem;
+    }
+
+    .nav-tabs-wizard .nav-link {
+        font-size: 0.85rem;
+        padding: 8px 12px;
+    }
+}
+
+/* Botão principal do formulário */
+#btnCriarChamado {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 12px;
+}
+
+/* Campos do formulário */
+form .form-label {
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+form .form-control {
+    margin-bottom: 10px;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+

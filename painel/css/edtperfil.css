@@ -1,0 +1,225 @@
+
+    /* css da navbar */
+@media (max-width: 1030px) {
+    .nav .btn {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.5rem;
+    }
+    .nav .btn i {
+        font-size: 0.9rem;
+    }
+}
+
+/* INICIO DO CSS DO WIZARD - ABAS */
+/* Definir um tamanho fixo para a área do conteúdo */
+
+.tab-pane {
+    overflow-x: hidden;
+}
+    
+.tab-content {
+    min-height: 500px;
+    max-height: 650px;
+    overflow-y: auto;
+}
+        
+/* Melhorar a experiência mobile */
+@media (max-width: 768px) {
+    .nav-tabs {
+        flex-direction: column; /* Empilhar abas no mobile */
+    }
+                    
+    .btn-container {
+        flex-direction: column; /* Empilhar botões de navegação no mobile */
+    }
+
+    .btn-container button {
+        width: 100%; /* Ocupa toda a largura no mobile */
+        margin-bottom: 8px;
+    }
+}
+
+/* Esconde completamente o input */
+#inputImagem {
+    display: none;
+}
+#inputImagemDoc {
+    display: none;
+}
+#inputImagemEnd {
+    display: none;
+}    
+/* FINAL DO CSS DO WIZARD - ABAS */
+
+
+
+/* Estiliza o label para parecer um botão */
+.btn-upload {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007bff; /* Cor do botão primário */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    transition: background 0.3s ease;
+}
+
+.btn-upload:hover {
+    background-color: #0056b3; /* Efeito hover */
+}
+            /* css da responsividade do footer */
+.footer-custom {
+    background-color: #3271a5;
+    color: white;
+    padding: 2rem 0;
+}
+    .link-branco {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 1.5rem;
+}
+.texto-grande {
+    font-size: 1.25rem;
+}
+
+@media (max-width: 992px) {
+    .texto-grande {
+        font-size: 1rem;
+    }
+    .link-branco {
+    font-size: 1.25rem;
+    margin-left: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .texto-grande {
+        font-size: 0.875rem;
+    }
+    .link-branco {
+        font-size: 1rem;
+        margin-left: 3px;
+    }
+}     
+.img-mid-square {
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #007bff;
+}
+
+/* Responsividade para telas < 760px */
+@media (max-width: 760px) {
+    .img-mid-square {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/* Responsividade para telas < 400px */
+@media (max-width: 400px) {
+    .img-mid-square {
+        display: none !important;
+    }
+
+    /* Empilha os elementos de upload verticalmente */
+    .form-group .d-flex {
+        flex-direction: column !important;
+        align-items: stretch !important;
+    }
+
+    .form-group .col-md-3 {
+        width: 100% !important;
+        margin-bottom: 10px;
+    }
+
+    .form-group .form-label,
+    .form-group .btn-upload {
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    /* Garante que os inputs de data de nascimento fiquem lado a lado */
+    .form-group.data-nascimento .d-flex {
+        flex-direction: row !important;
+        gap: 6px;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .form-group.data-nascimento .col-md-3 {
+        width: 33.3% !important;
+    }
+
+    .form-group.data-nascimento input.form-control-sm {
+        font-size: 0.85rem;
+        padding: 4px 6px;
+    }
+}
+
+@media (max-width: 400px) {
+    .form-group.cpf-alterar-senha .d-flex.row {
+        flex-direction: row !important;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .form-group.cpf-alterar-senha .col-md-9 {
+        flex: 1 1 auto !important;
+        width: auto !important;
+    }
+
+    .form-group.cpf-alterar-senha .col-md-3 {
+        flex: 0 0 auto !important;
+        width: auto !important;
+    }
+
+    .form-group.cpf-alterar-senha .btn {
+        white-space: nowrap;
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+
+    .form-group.cpf-alterar-senha input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .form-group.email-confirmacao .d-flex.row {
+        flex-direction: row !important;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .form-group.email-confirmacao .col-md-9 {
+        flex: 1 1 auto !important;
+        width: auto !important;
+    }
+
+    .form-group.email-confirmacao .col-md-3 {
+        flex: 0 0 auto !important;
+        width: auto !important;
+    }
+
+    .form-group.email-confirmacao .btn {
+        white-space: nowrap;
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+
+    .form-group.email-confirmacao input {
+        width: 100%;
+    }
+}
+

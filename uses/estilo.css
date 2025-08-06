@@ -1,0 +1,121 @@
+.dropdown-menu {
+  right: 0 !important;
+  left: auto !important;
+}
+.center {
+    text-align: center;
+    font-weight: bold;
+}
+.cor_ouro {
+color: #a57c00;
+}
+.tabela_border {
+border: 1px solid grey;
+width: 100% !important; /*Importante manter o !important rs */
+margin: auto;
+}
+.th_cards, .td_cards {
+    border: 0;
+    text-align: center;
+    padding: 10px;
+}
+.carousel-prev-icone-azul {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%230cb7f2' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+.carousel-next-icone-azul {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%230cb7f2' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+/* css utilizado somente nesta pagina */
+.table-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.img-circle {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.img-circle-perfil {
+  border-radius: 50%; /* Torna a imagem circular */
+  width: 250px; /* Ajuste conforme necessário */
+  height: 250px; /* Ajuste conforme necessário */
+  object-fit: cover; /* Corta a imagem para se ajustar ao contêiner */
+}
+.bg-color-azul-B9E7F8 {
+  background-color: #B9E7F8;
+}
+.bg-color-ouro-f7d547 {
+  background-color: #f7d547;
+}
+.cor-texto-verde {
+  color: #007d4d
+}
+.cor-texto-ouro {
+  color: #f6ba00
+}
+.linkpreto {
+  color: black;
+  text-decoration: none;
+}
+.linkpreto_hover:hover {
+  color: #000000; /* Altere para a cor desejada ao passar o mouse */
+  text-decoration: none;
+}
+.input-preenchido {
+  background-color: #f0f0f0; /* Cinza claro */
+}
+/* Estilo para a mensagem de erro */
+.mensagem-erro {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+.modal-mycss {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0); /* Fallback de fundo */
+  background-color: rgba(0,0,0,0.4); /* Fundo escurecido */
+  padding-top: 60px;
+}
+
+/* O conteúdo do modal */
+.modal-content-mycss {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  animation: fadeIn 0.3s ease;
+}
+
+/* Estilo para o botão de fechar */
+.close-mycss {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-mycss:hover,
+.close-mycss:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Animação de fade-in para o modal */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
